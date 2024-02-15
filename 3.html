@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="shortcut icon" href="News.png" type="image/x-icon">
+    <title>NewzNowTech</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>NewzNowTech</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="index.js"></script>
+    <link rel="shortcut icon" href="News.png" type="image/x-icon">
+</head>
+<body>
+    
+
+
+    <style>
+        body {
+            padding-top: 56px; /* Adjust based on navbar height */
+        }
+
+        .navbar {
+            transition: top 0.7s;
+        }
+
+        .navbar.hidden {
+            top: -56px; /* Set to negative navbar height */
+        }
+
+        .navbar.fixed-top {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
+        <div class="container">
+            <!--logo with image-->
+            <a class="navbar-brand fs-4" href="index.html">
+                <img src="NewsNowTech.png" alt="Logo" height="40" width="190" class="rounded">
+            </a>
+            <!-- toggle button-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- sidebar-->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- sidebar header-->
+                <div class="offcanvas-header text-dark border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome!</h5>
+                    <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- SIDE BAR BODY-->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 fs-6 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Startups</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Funding</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Technology</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Employment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-1 justify-content-center align-items-center" role="Search">
+                        <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">🔍</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+
+        let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+        document.querySelector('.navbar').classList.remove('hidden');
+    } else {
+        document.querySelector('.navbar').classList.add('hidden');
+    }
+
+    prevScrollPos = currentScrollPos;
+};
+    </script>
+
+
+
+
+    <div class="container my-5">
+        <h1 class="fst-normal">Top News (3)</h1>
+        <div class="recent-updates my-3 p-3 bg-body rounded shadow-sm">
+            <h6 class="border-bottom pb-2 mb-0"><b>15 Feb 2024</b></h6>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-75530,msid-107696481,width-140,height-105/it-services-firm-prodapt-appoints-former-tech-mahindra-exec-manish-vyas.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>IT services firm Prodapt appoints former Tech Mahindra exec Manish Vyas </mark> </strong>
+                    Vyas, who joins Chennai-headquartered Prodapt after a 23-year-plus tenure at Tech Mahindra, will guide the leadership team to drive strategic initiatives, the statement by Prodapt said. Vyas quit Tech Mahindra, India’s fifth-largest software services firm, on November 17 last year.
+                  <br>
+                  <br>
+                  <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-21932,msid-107689002,width-140,height-105/infosys-under-fire-for-failing-to-create-jobs-in-karnataka.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Infosys under fire for failing to create jobs in Karnataka</mark> </strong>
+                    During the Karnataka state legislature's budget session, Arvind Bellad criticizes Infosys for not delivering on job creation. Priyank Kharge suggests withdrawing incentives and land in cases of non-performance. MB Patil promises to investigate and ensures jobs at Foxconn's plant in Doddaballapur.
+                    <br>
+                  <br>
+                  <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-922883,msid-107664664,width-140,height-105/wipro-acquires-us-insurtech-firm-aggne-global-for-66-million.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Wipro acquires US insurtech firm Aggne Global for $66 million </mark> </strong>
+                    Wipro will acquire 60% of the company in an all-cash deal, with an option to purchase the remaining stake over a period of time, as per a stock exchange filing. Revenues of the Aggne Group are $4.5 million for calendar year 2021, $9.1 million for 2022, and $17.9 million 2023.
+                    <br>
+                  <br>
+                  <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-47896,msid-107664365,width-140,height-105/infosys-signs-multi-year-contract-with-singapores-pacific-international-lines.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Infosys signs multi-year contract with Singapore’s Pacific International Lines </mark> </strong>
+                    The multi-year, multi-phased collaboration seeks to address critical business challenges such as modernizing web and mobile applications, enhancing scalability, and providing advisory services on the latest technology and business trends, it added. Deal financials remained undisclosed.
+                    <br>
+                  <br>
+                  <a href="">Source</a>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-80994,msid-107560865,width-140,height-105/genpact-expects-fy24-revenue-to-remain-sluggish-fy23-growth-slows-to-4.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Genpact expects FY24 revenue to remain sluggish, FY23 growth slows to 4% </mark> </strong>
+                    Genpact forecasts total revenue for Q1FY24 in the range of $1.108-1.114 billion representing a modest growth of 1.75-2.25%. The growth on a constant currency basis is projected in the range of 1.95% to 2.45%. Gross margins are expected to remain flat at 35%. Full-year revenue growth is expected to remain lower in the
+                    <br>
+                  <br>
+                  <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-12998,msid-107482550,width-140,height-105/freshworks-cro-pradeep-rathinam-quits-abe-smith-named-global-field-operations-chief.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Freshworks CRO Pradeep Rathinam quits; Abe Smith named global field operations chief </mark> </strong>
+                    Freshworks has hired Abe Smith, former executive at Zoom, as its Chief of Global Field Operations. The company's Chief Revenue Officer, Pradeep Rathinam, will be leaving at the end of the month. Freshworks reported a 20% increase in total revenues to $160 million for Q4, with a net loss of $28 million.
+                    <br>
+                  <br>
+                  <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item">
+                <a class="page-link" href="2.html" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="1.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+              <li class="page-item disabled">
+                <a class="page-link" href="1.html">Next</a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+    
+
+
+
+
+
+
+
+    <div class="container mx-auto my-4"> <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top"> <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 NewzNowTech <a href="https://diverpulsemedia.tech/">(Diverpulse Media)</a>, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://medium.com/@gaurav464"><i class="fab fa-medium"></i></a></li>
+    </ul>
+</footer>
+</div> 
+
+
+    
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+<script src="index.js"></script>
+</body>
+</html>

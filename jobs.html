@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="shortcut icon" href="News.png" type="image/x-icon">
+    <title>NewzNowTech</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>NewzNowTech</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="index.js"></script>
+    <link rel="shortcut icon" href="News.png" type="image/x-icon">
+</head>
+<body>
+    
+
+
+    <style>
+        body {
+            padding-top: 56px; /* Adjust based on navbar height */
+        }
+
+        .navbar {
+            transition: top 0.7s;
+        }
+
+        .navbar.hidden {
+            top: -56px; /* Set to negative navbar height */
+        }
+
+        .navbar.fixed-top {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
+        <div class="container">
+            <!--logo with image-->
+            <a class="navbar-brand fs-4" href="index.html">
+                <img src="NewsNowTech.png" alt="Logo" height="40" width="190" class="rounded">
+            </a>
+            <!-- toggle button-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- sidebar-->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- sidebar header-->
+                <div class="offcanvas-header text-dark border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome!</h5>
+                    <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- SIDE BAR BODY-->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 fs-6 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="startups.html">Startups</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="funding.html">Funding</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="technology.html">Technology</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employment.html">Employment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="jobs.html">Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-1 justify-content-center align-items-center" role="Search">
+                        <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">🔍</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+
+        let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+        document.querySelector('.navbar').classList.remove('hidden');
+    } else {
+        document.querySelector('.navbar').classList.add('hidden');
+    }
+
+    prevScrollPos = currentScrollPos;
+};
+    </script>
+
+
+
+
+    <div class="container my-5">
+        <div class="list-group">
+            <a href="https://www.google.com/about/careers/applications/" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://1000logos.net/wp-content/uploads/2016/11/New-Google-Logo.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Google</h4>
+                </div>
+            </a>
+            <a href="https://www.adobe.com/careers.html" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://logowik.com/content/uploads/images/adobe-inc-a878.logowik.com.webp" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Adobe</h4>
+                </div>
+            </a>
+            <a href="https://careers.pypl.com/home/default.aspx" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/PayPal_Logo_Icon_2014.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">PayPal</h4>
+                </div>
+            </a>
+            <a href="https://stripe.com/in/jobs" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://play-lh.googleusercontent.com/2PS6w7uBztfuMys5fgodNkTwTOE6bLVB2cJYbu5GHlARAK36FzO5bUfMDP9cEJk__cE" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Stripe</h4>
+                </div>
+            </a>
+            <a href="https://render.com/careers" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_477db83f729d63210139ec7cd29c1351/render-render.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Render</h4>
+                </div>
+            </a>
+            <a href="https://redpanda.com/careers" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://yt3.googleusercontent.com/fmuT9mZtK2fuhjNtPLHHueFaNSGLaDuEiQoxi_C9nTbUcX1xft6yHDs3GCn_GNnGoplDj4hbofk=s900-c-k-c0x00ffffff-no-rj" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Redpanda</h4>
+                </div>
+            </a>
+            <a href="https://jobs.ashbyhq.com/captions" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://www.sequoiacap.com/wp-content/uploads/sites/6/2021/11/d177b2df-31d3-4a02-83f1-381378ac60d9.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Captions</h4>
+                </div>
+            </a>
+            <a href="https://automattic.com/work-with-us/?utm_source=techmeme&utm_campaign=downtogo" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://techmeme.com/simg/jobfav/automattic-pfZlaqfI.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Automattic</h4>
+                </div>
+            </a>
+            <a href="https://enfabrica.net/" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://media.licdn.com/dms/image/D560BAQH-UAAH5upTdw/company-logo_200_200/0/1682000138313/acebinfra1_logo?e=2147483647&v=beta&t=RpundjRXqheGwXcqEgTi2ToUQGFRLmEH8eVGUojOgzU" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Emfabrica</h4>
+                </div>
+            </a>
+            <a href="https://imbue.com/careers/" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://generallyintelligent.com/logo.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Imbue</h4>
+                </div>
+            </a>
+            <a href="https://inflection.ai/careers" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://images.yourstory.com/cs/images/companies/InflectionAI-1683181869120.jpg?fm=auto&ar=1:1&mode=fill&fill=solid&fill-color=fff" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Inflection</h4>
+                </div>
+            </a>
+            <a href="https://vastdata.com/careers" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://www.pny.com/image%20library/professional/software-solutions/networking/enterprise-storage/vast-logo-alpha-glow.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Vast Data</h4>
+                </div>
+            </a>
+            <a href="https://coreweave.com/careers" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://avatars.githubusercontent.com/u/50837895?s=280&v=4" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">CoreWeave</h4>
+                </div>
+            </a>
+            <a href="https://careers.zohocorp.com/jobs/Careers" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://logowik.com/content/uploads/images/zoho-new9282.logowik.com.webp" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">ZOHO</h4>
+                </div>
+            </a>
+            <a href="https://ibegin.tcs.com/iBegin/" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9AadNHQhLzWdn6cJXt9abVHd0BoUUCpzc2pd_FlHJQP-maRVmMzXkWaIrJa71feyi9rE&usqp=CAU" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">TCS</h4>
+                </div>
+            </a>
+            <a href="https://www.infosys.com/careers.html" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://static.vecteezy.com/system/resources/previews/020/336/451/original/infosys-logo-infosys-icon-free-free-vector.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Infosys</h4>
+                </div>
+            </a>
+            <a href="https://careers.wipro.com/careers-home/" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://logowik.com/content/uploads/images/6146-wipro-technology.webp" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Wipro</h4>
+                </div>
+            </a>
+            <a href="https://careers.microsoft.com/v2/global/en/home.html" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                <img src="https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/microsoft-512.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                <div class="text-center">
+                    <h4 class="mb-0">Microsoft</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+    <div class="container mx-auto my-4"> <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top"> <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 NewzNowTech <a href="https://diverpulsemedia.tech/">(Diverpulse Media)</a>, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://medium.com/@gaurav464"><i class="fab fa-medium"></i></a></li>
+    </ul>
+</footer>
+</div> 
+
+
+    
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+<script src="index.js"></script>
+</body>
+</html>
