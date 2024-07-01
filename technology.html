@@ -7,26 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
     <link rel="stylesheet" href="style.css"> 
     <link rel="shortcut icon" href="News.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <title>NewzNowTech</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <title>NewzNowTech</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="index.js"></script>
-    <link rel="shortcut icon" href="News.png" type="image/x-icon">
-</head>
-<body>
-    
-
-
     <style>
         body {
             padding-top: 56px; /* Adjust based on navbar height */
@@ -45,33 +28,51 @@
             width: 100%;
             z-index: 1000;
         }
+
+        .news-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 20px;
+        }
+
+        .news-item img {
+            max-width: 140px;
+            margin-right: 20px;
+        }
+
+        .news-content {
+            max-width: calc(100% - 160px);
+        }
+
+        .news-content h3 {
+            font-weight: bold;
+        }
+
+        .news-content p {
+            font-weight: normal;
+        }
     </style>
 </head>
-
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
         <div class="container">
-            <!--logo with image-->
             <a class="navbar-brand fs-4" href="index.html">
                 <img src="NewsNowTech.png" alt="Logo" height="40" width="190" class="rounded">
             </a>
-            <!-- toggle button-->
             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- sidebar-->
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <!-- sidebar header-->
                 <div class="offcanvas-header text-dark border-bottom">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome!</h5>
                     <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <!-- SIDE BAR BODY-->
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 fs-6 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="startups.html">Startups</a>
@@ -80,8 +81,7 @@
                             <a class="nav-link" href="funding.html">Funding</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="technology.html">Technology</a>
-                        </li>
+                            <a class="nav-link" href="technology.html">Technology</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="employment.html">Employment</a>
@@ -93,40 +93,51 @@
                             <a class="nav-link" href="about.html">About us</a>
                         </li>
                     </ul>
-                    <form class="d-flex mt-1 justify-content-center align-items-center" role="Search">
-                        <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-secondary" type="submit">🔍</button>
-                    </form>
+                    <div class="text-center">
+                        <button class="btn btn-primary mt-1 justify-content-center align-items-center" type="button">Explore Our NewInterns</button>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
     <script>
-
         let prevScrollPos = window.pageYOffset;
 
-window.onscroll = function () {
-    let currentScrollPos = window.pageYOffset;
+        window.onscroll = function () {
+            let currentScrollPos = window.pageYOffset;
 
-    if (prevScrollPos > currentScrollPos) {
-        document.querySelector('.navbar').classList.remove('hidden');
-    } else {
-        document.querySelector('.navbar').classList.add('hidden');
-    }
+            if (prevScrollPos > currentScrollPos) {
+                document.querySelector('.navbar').classList.remove('hidden');
+            } else {
+                document.querySelector('.navbar').classList.add('hidden');
+            }
 
-    prevScrollPos = currentScrollPos;
-};
+            prevScrollPos = currentScrollPos;
+        };
     </script>
 
-
-
-
     <div class="container my-5">
-        <h1 class="fst-normal">Technology News</h1>
+        <h1 class="fst-normal">Top News</h1>
         <div class="recent-updates my-3 p-3 bg-body rounded shadow-sm">
-            <h6 class="border-bottom pb-2 mb-0"><b>15 Feb 2024</b></h6>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+            <h6><b>2 Jul 2024</b></h6>
+            <div id="news-container" class="container mt-5"></div>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="1.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="1.html">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
         const apiKey = 'c4b68dbc31a54019a6f6dae430ad8cdc';
         const url = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${apiKey}`;
@@ -155,39 +166,23 @@ window.onscroll = function () {
             })
             .catch(error => console.error('Error fetching news:', error));
     </script>
+
+    <div class="container mx-auto my-4">
+        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 NewzNowTech, <a href="https://diverpulsemedia.tech/">Diverpulse</a>, Inc</span>
             </div>
-        </div>
-    </div>
-    
-
-
-
-
-
-
-
-    <div class="container mx-auto my-4"> <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top"> <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 NewzNowTech <a href="https://diverpulsemedia.tech/">(Diverpulse Media)</a>, Inc</span>
+            <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://medium.com/@gaurav464"><i class="fab fa-medium"></i></a></li>
+            </ul>
+        </footer>
     </div>
 
-    <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-twitter"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-instagram"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-facebook"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="https://medium.com/@gaurav464"><i class="fab fa-medium"></i></a></li>
-    </ul>
-</footer>
-</div> 
-
-
-    
-    
-    
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
-<script src="index.js"></script>
 </body>
 </html>
